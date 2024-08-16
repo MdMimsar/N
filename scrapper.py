@@ -1,7 +1,7 @@
 """
 Author: Bisnu Ray
-User : https://t.me/SmartBisnuBio
-Channel: https://t.me/itsSmartDev
+User : https://t.me/darkbro222
+Channel: https://t.me/darkbro222
 
 """
 
@@ -14,14 +14,14 @@ from aiogram import Bot, Dispatcher, types, executor
 from pyrogram import Client
 
 # Aiogram setup
-BOT_TOKEN = "12345678:ABCDEFGHIJKLMNOPQRST"   # Replace this BOT_TOKEN
+BOT_TOKEN = "7540037669:AAGdITrZ001f7oFw7VP2PW2pD3EgeiQ2BLs"   # Replace this BOT_TOKEN
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher(bot)
 
 # Pyrogram setup
-api_id = "12345678"   # Replace this API ID with your actual API ID
-api_hash = "1234567890abcdefghijk"  # Replace this API ID with your actual API HASH
-phone_number = "+1901234567"    # Replace this API ID with your phone number
+api_id = "21122243"   # Replace this API ID with your actual API ID
+api_hash = "eecc33bfe27619a23edde8d22a403c21"  # Replace this API ID with your actual API HASH
+phone_number = "+88016"    # Replace this API ID with your phone number
 
 user_client = Client("my_account", api_id=api_id, api_hash=api_hash, phone_number=phone_number)
 
@@ -93,7 +93,7 @@ async def process_scrape_queue(user_client, bot):
                         f"<b>Amount:</b> <code>{len(unique_messages)}</code>\n"
                         f"<b>Duplicates Removed:</b> <code>{duplicates_removed}</code>\n"
                         f"<b>━━━━━━━━━━━━━━━━</b>\n"
-                        f"<b>Card-Scrapper By: <a href='https://t.me/itsSmartDev'>Smart Dev</a></b>\n"
+                        f"<b>Card-Scrapper By: <a href='https://t.me/darkbro222'>Smart Dev</a></b>\n"
                     )
                     await temporary_msg.delete()
                     await bot.send_document(message.chat.id, f, caption=caption, parse_mode='html')
